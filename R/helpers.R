@@ -116,7 +116,6 @@ geomx_import_fun_HRK <- function(countFile, sampleAnnoFile, featureAnnoFile,
       }
       stopifnot(colnames.as.rownames[3] %in% colnames(genemeta0))
       
-      #genemeta <- genemeta0[, colnames.as.rownames[3]]
       genemeta <- genemeta0
       rownames(genemeta) <- genemeta0[[colnames.as.rownames[3]]]
       
